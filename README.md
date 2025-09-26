@@ -1,17 +1,14 @@
-Sākumā jaizveido DB - MySQL
+Projekts veidots ar **Laravel 12.x**, **PHP 8.4**, **MySQL/MariaDB**.  
 
-DROP USER IF EXISTS 'news_user'@'localhost';
+
+## 1. Datubāzes sagatavošana
+Sākumā jaizveido DB - MySQL
 
 CREATE DATABASE IF NOT EXISTS news_portal
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-CREATE USER 'news_user'@'localhost' IDENTIFIED BY 'stipra_parole';
-
-GRANT ALL PRIVILEGES ON news_portal.* TO 'news_user'@'localhost';
-
-FLUSH PRIVILEGES;
-
+## 2. Projekta uzstādīšana
 Tad jāpalaiž komandas projekta terminālī:
 1. composer install
 2. cp .env.example .env
@@ -28,3 +25,24 @@ Demo lietoājs
 Email => 'test@example.com'
 
 Parole => 'secret123'
+
+## Kas izdarīts
+Publiskā puse:
+
+Ziņu saraksts ar lapdali.
+Ziņas skatīšana ar komentāriem.
+Komentāru pievienošana bez reģistrācijas ar CAPTCHA.
+
+Administrācijas puse:
+Autorizācija (e-pasts + parole).
+Ziņu pievienošana, rediģēšana, dzēšana.
+Komentāru moderācija (dzēšana).
+Pielikumu pievienošana ziņām (faila tipa un izmēra validācija).
+
+Drošība:
+PDO + sagatavotie pieprasījumi (Laravel Eloquent).
+XSS aizsardzība ({{ }} izvade).
+CSRF tokeni formām (@csrf).
+Vienību tests ar PHPUnit.
+
+Minimāls CSS dizains (publiskā un admin puse).
