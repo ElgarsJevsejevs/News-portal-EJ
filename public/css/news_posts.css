@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.posts-container {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.posts-container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.post-title a {
+    text-decoration: none;
+    color: #3056d3;
+    font-size: 22px;
+}
+
+.post-title a:hover {
+    color: #1f3ea3;
+}
+
+.post-meta {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-excerpt {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.post-comments {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+}
+
+.pagination{
+    display: flex;
+    list-style: none;
+}
+
+.pagination-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination-wrapper nav {
+    display: inline-block;
+}
+
+.pagination-wrapper .page-link {
+    color: #3056d3;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.pagination-wrapper .page-link:hover {
+    background: #3056d3;
+    color: #fff;
+}
+
+.pagination-wrapper .active .page-link {
+    background: #3056d3;
+    color: #fff;
+    border: 1px solid #3056d3;
+}

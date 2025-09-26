@@ -1,0 +1,140 @@
+.form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #222;
+    text-align: center;
+}
+
+.post-form .form-group {
+    margin-bottom: 20px;
+}
+
+.post-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.post-form input,
+.post-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+    outline: none;
+    border-color: #3056d3;
+}
+
+.btn-submit {
+    display: inline-block;
+    background: #3056d3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s ease;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: #1f3ea3;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #f0f0f0;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+.btn-back:hover {
+    background: #ddd;
+}
+
+.success-message {
+    color: green;
+    background: #e6f8e6;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.posts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.posts-table th,
+.posts-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.posts-table th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+.posts-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.btn-action-small,
+.btn-delete-small {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-action-small {
+    background: #3056d3;
+    color: #fff;
+    border: none;
+}
+
+.btn-action-small:hover {
+    background: #1f3ea3;
+}
+
+.btn-delete-small {
+    background: #b00020;
+    color: #fff;
+    border: none;
+}
+
+.btn-delete-small:hover {
+    background: #7a0016;
+}
