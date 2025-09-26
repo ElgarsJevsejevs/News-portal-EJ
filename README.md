@@ -29,7 +29,7 @@ Parole => 'secret123'
 ## Kas izdarīts
 Publiskā puse:
 
-Ziņu saraksts ar lapdali.
+Ziņu saraksts ar lapdali. 
 Ziņas skatīšana ar komentāriem.
 Komentāru pievienošana bez reģistrācijas ar CAPTCHA.
 
