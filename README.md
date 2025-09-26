@@ -29,20 +29,36 @@ Parole => 'secret123'
 ## Kas izdarīts
 Publiskā puse:
 
-Ziņu saraksts ar lapdali. 
+Ziņu saraksts ar lapdali.
+
+
 Ziņas skatīšana ar komentāriem.
+
 Komentāru pievienošana bez reģistrācijas ar CAPTCHA.
 
+
 Administrācijas puse:
+
+
 Autorizācija (e-pasts + parole).
+
 Ziņu pievienošana, rediģēšana, dzēšana.
+
 Komentāru moderācija (dzēšana).
+
 Pielikumu pievienošana ziņām (faila tipa un izmēra validācija).
 
+
 Drošība:
+
+
 PDO + sagatavotie pieprasījumi (Laravel Eloquent).
+
 XSS aizsardzība ({{ }} izvade).
+
 CSRF tokeni formām (@csrf).
+
 Vienību tests ar PHPUnit.
+
 
 Minimāls CSS dizains (publiskā un admin puse).
