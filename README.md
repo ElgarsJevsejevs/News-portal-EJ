@@ -1,4 +1,4 @@
-Projekts veidots ar **Laravel 12.x**, **PHP 8.4**, **MySQL/MariaDB**.  
+Projekts veidots ar **Laravel 12.x**, **PHP 8.4**, **MySQL**.  
 
 
 ## 1. Datubāzes sagatavošana
